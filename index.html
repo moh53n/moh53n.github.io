@@ -1,51 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mohsen Tahmasebi's website">
-  <title>Mohsen Tahmasebi | محسن طهماسبی</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mohsen Tahmasebi's website" />
+    <title>Mohsen Tahmasebi | محسن طهماسبی</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main class="page">
-    <section class="intro" aria-labelledby="name">
-      <h1 id="name" class="intro__name">
-        <span>Mohsen Tahmasebi</span>
-        <span lang="fa" dir="rtl">محسن طهماسبی</span>
-      </h1>
-
-      <p class="intro__bio">
-        Engineer exploring the layers between software, infrastructure, networks, and machines.
-      </p>
-
-      <nav class="social-links" aria-label="Social links">
-        <div class="social-links__row">
-          <a href="https://www.reddit.com/user/moh53n/">Reddit</a>
-          <a href="https://twitter.com/moh53n">English Twitter</a>
-          <a href="https://twitter.com/moh53n_fa" lang="fa" dir="rtl">توییتر فارسی</a>
-          <a href="https://bsky.app/profile/moh53n.bsky.social">Bluesky</a>
-        </div>
-
-        <div class="social-links__row">
-          <a href="https://moh53n.medium.com/">Medium Blog</a>
-          <a href="https://moh53n.net/blog-fa/" lang="fa" dir="rtl">وبلاگ فارسی</a>
-        </div>
-
-        <div class="social-links__row">
-          <a href="https://www.linkedin.com/in/mohsen-tahmasebi/">LinkedIn</a>
-          <a href="https://github.com/moh53n">GitHub</a>
-        </div>
-
-        <div class="social-links__row">
-          <a href="mailto:moh53n@moh53n.net">Email</a>
-        </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+     <!-----> <a class="site-header__brand" href="/">Mohsen Tahmasebi</a>
+      <nav class="site-header__nav" aria-label="Primary navigation">
+        <a aria-current="page" href="/">Home</a>
+        <a href="/portfolio/">Portfolio</a>
+        <a href="https://moh53n.net/blog/">Blog</a>
+        <a href="https://moh53n.net/blog-fa/">Persian Blog</a>
+        <a href="mailto:moh53n@moh53n.net">Email</a>
       </nav>
-    </section>
-  </main>
-</body>
+    </header>
+
+    <main class="page">
+      <section class="intro" aria-labelledby="name">
+        <h1 id="name" class="intro__name">
+          <span>Mohsen Tahmasebi</span>
+          <span lang="fa" dir="rtl">محسن طهماسبی</span>
+        </h1>
+
+        <p class="intro__bio">
+          Engineer exploring the layers between software, infrastructure,
+          networks, and machines.
+        </p>
+
+        <hr class="intro__divider" aria-hidden="true" />
+        <nav
+          class="contact-social intro__social"
+          aria-label="Contact and social links"
+        >
+          <a
+            href="https://www.linkedin.com/in/mohsen-tahmasebi/"
+            rel="me"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <img src="/assets/icons/linkedin.svg" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://github.com/moh53n"
+            rel="me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <img src="/assets/icons/github.svg" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://twitter.com/moh53n"
+            rel="me"
+            aria-label="English Twitter"
+            title="English Twitter"
+          >
+            <img src="/assets/icons/twitter.svg" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://twitter.com/moh53n_fa"
+            rel="me"
+            aria-label="Persian Twitter"
+            title="Persian Twitter"
+          >
+            <img src="/assets/icons/twitter.svg" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://bsky.app/profile/moh53n.bsky.social"
+            rel="me"
+            aria-label="Bluesky"
+            title="Bluesky"
+          >
+            <img src="/assets/icons/bluesky.svg" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://www.reddit.com/user/moh53n/"
+            rel="me"
+            aria-label="Reddit"
+            title="Reddit"
+          >
+            <img src="/assets/icons/reddit.svg" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://moh53n.medium.com/"
+            rel="me"
+            aria-label="Medium Blog"
+            title="Medium Blog"
+          >
+            <img src="/assets/icons/medium.svg" alt="" aria-hidden="true" />
+          </a>
+          <a href="mailto:moh53n@moh53n.net" aria-label="Email" title="Email">
+            <img src="/assets/icons/envelope.svg" alt="" aria-hidden="true" />
+          </a>
+        </nav>
+      </section>
+    </main>
+  </body>
 </html>
