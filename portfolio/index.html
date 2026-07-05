@@ -131,11 +131,8 @@
         <div class="portfolio-hero__content">
           <h1 id="portfolio-title">Mohsen Tahmasebi</h1>
           <p>
-            Selected projects, talks, media, and writing from Mohsen Tahmasebi
+            Selected projects, talks, media, and notes from Mohsen Tahmasebi
             (<span lang="fa" dir="rtl">محسن طهماسبی</span>).
-            Mohsen is a Platform / Infrastructure Engineer with 5+ years of
-            experience building and operating Linux, Kubernetes, networking, and
-            IoT/edge systems in production environments.
           </p>
         </div>
       </section>
@@ -163,11 +160,39 @@
           <div class="project-grid" aria-label="Projects and collaborations">
             <article class="project-card">
               <div>
+                <p class="project-card__meta">Open Source Contribution</p>
+                <h3>Upstream Linux Kernel Patch</h3>
+                <p>
+                  Contributed a small upstream Linux kernel patch adding
+                  Quectel EC200A module support.
+                </p>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/torvalds/linux/commit/857ea9005806e2a458016880278f98715873e977">View Commit</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div>
+                <p class="project-card__meta">Open Source Contribution</p>
+                <h3>pi-gen</h3>
+                <p>
+                  Contributed to official Raspberry Pi OS image creation tool,
+                  with improvements to its Docker-based build process.
+                </p>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/RPi-Distro/pi-gen/commit/6dc45a80e764eacd6e311c32164b623bbe7f8e08">View Commit</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div>
                 <p class="project-card__meta">Security Research</p>
                 <h3>Kāveh</h3>
                 <p>
-                  Kāveh is a malware discovery project focused on malware
-                  present in Iran. This project is a subproject of
+                  Kāveh was a malware discovery project focused on malware
+                  present in Iran. This project was a subproject of
                   <a class="text-link" href="https://nooshdaroo.ir">Nooshdaroo</a>.
                 </p>
               </div>
@@ -186,36 +211,8 @@
 
             <article class="project-card">
               <div>
-                <p class="project-card__meta">Infrastructure Tooling</p>
-                <h3>pi-gen</h3>
-                <p>
-                  Contributed to official Raspberry Pi OS image creation tool,
-                  with improvements to its Docker-based build process.
-                </p>
-              </div>
-              <div class="project-card__actions">
-                <a href="https://github.com/moh53n/pi-gen">View Fork</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div>
-                <p class="project-card__meta">Open Source Contribution</p>
-                <h3>Upstream Linux Kernel Patch</h3>
-                <p>
-                  Contributed a small upstream Linux kernel patch adding
-                  support for an LTE module, based on a production need.
-                </p>
-              </div>
-              <div class="project-card__actions">
-                <a href="mailto:moh53n@moh53n.net">Ask for details</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div>
-                <p class="project-card__meta">Reverse engineering</p>
-                <h3>CafeBazaar API Research Scripts</h3>
+                <p class="project-card__meta">Security Research</p>
+                <h3>CafeBazaar Scanning</h3>
                 <p>
                   A research toolkit built around
                   <a
@@ -225,7 +222,7 @@
                   >
                     CafeBazaar
                   </a>
-                  API, used to study malware risks in Iran’s Android ecosystem.
+                  API, used to study malware risks in Iran's Android ecosystem.
                 </p>
               </div>
               <div class="project-card__actions">
@@ -243,14 +240,14 @@
 
       <section class="portfolio-section" aria-labelledby="posts-title">
         <div class="section-heading">
-          <h2 id="posts-title">Writing and posts</h2>
+          <h2 id="posts-title">Featured notes and posts</h2>
         </div>
 
 <!-----------------------------------Max 4 posts----------------------------------->
         <div class="post-showcase">
           <article class="post-feature">
             <div>
-              <p class="post-feature__meta">Featured / Medium</p>
+              <p class="post-feature__meta">Medium</p>
               <h3>Listening To Satellites: A Journey With My RTL-SDR V3</h3>
               <p>
                 How I received signals from weather satellites, CubeSats,
@@ -295,7 +292,7 @@
 
 <!-----------------------------------Sample----------------------------------->
             <a
-              class="post-index__item"
+              class="post-index__item" hidden
               href="https://example.com/"
             >
               <span>
@@ -358,7 +355,7 @@
                 <h3>Cybersecurity in IoT</h3>
                 <p>
                   A talk about why IoT security matters, how connected devices
-                  can introduce real-world risks, and why protecting them is
+                  can introduce real world risks, and why protecting them is
                   becoming more important as they become part of everyday
                   systems.
                 </p>
@@ -390,7 +387,7 @@
                 <p>
                   An introduction to dn42, a community-run network that acts as
                   a safe sandbox for experimenting with BGP, routing, and
-                  real-world internet concepts.
+                  real world internet concepts.
                 </p>
               </div>
             </article>
@@ -645,7 +642,7 @@
               aria-label="Bluesky"
               title="Bluesky"
             >
-              <img src="/assets/icons/Bluesky.svg" alt="" aria-hidden="true" />
+              <img src="/assets/icons/bluesky.svg" alt="" aria-hidden="true" />
             </a>
             <a
               href="https://www.reddit.com/user/moh53n/"
