@@ -497,6 +497,13 @@ a:focus-visible {
   transform: translateY(-2px);
 }
 
+.post-feature:has(h3 a:is(:hover, :focus-visible)) {
+  border-color: var(--color-border);
+  background-color: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
 .post-feature__meta,
 .post-index__source {
   margin: 0 0 0.75rem;
@@ -513,6 +520,11 @@ a:focus-visible {
   line-height: 1.08;
 }
 
+.post-feature h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .post-feature p:not(.post-feature__meta) {
   max-width: 38rem;
   margin: 1rem 0 0;
@@ -520,7 +532,7 @@ a:focus-visible {
   line-height: 1.6;
 }
 
-.post-feature a {
+.post-feature > a {
   align-self: flex-start;
   margin-top: 1.25rem;
   color: var(--color-text);
@@ -529,8 +541,8 @@ a:focus-visible {
   transition: color 180ms ease;
 }
 
-.post-feature a:hover,
-.post-feature a:focus-visible,
+.post-feature > a:hover,
+.post-feature > a:focus-visible,
 .post-index__item:hover,
 .post-index__item:focus-visible {
   color: var(--color-focus);
