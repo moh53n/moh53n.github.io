@@ -473,8 +473,10 @@ a:focus-visible {
 
 .post-feature {
   display: grid;
+  position: relative;
   min-height: 330px;
   align-content: space-between;
+  overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: 8px;
   background:
@@ -502,6 +504,44 @@ a:focus-visible {
   background-color: transparent;
   box-shadow: none;
   transform: none;
+}
+
+.post-feature__ribbon {
+  position: absolute;
+  top: 1.15rem;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  max-width: calc(100% - 1rem);
+  min-height: 1.7rem;
+  border-radius: 4px 0 0 4px;
+  background-color: var(--color-navy-light);
+  color: var(--color-text);
+  padding: 0.4rem 0.85rem 0.38rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+  white-space: nowrap;
+}
+
+.post-feature__ribbon::before {
+  width: 0.22rem;
+  align-self: stretch;
+  margin: -0.4rem 0.65rem -0.38rem -1rem;
+  background-color: var(--color-focus);
+  content: "";
+}
+
+.post-feature__ribbon:hover,
+.post-feature__ribbon:focus-visible {
+  background-color: var(--color-focus);
+  color: var(--color-text);
 }
 
 .post-feature__meta,
@@ -532,7 +572,7 @@ a:focus-visible {
   line-height: 1.6;
 }
 
-.post-feature > a {
+.post-feature > a:not(.post-feature__ribbon) {
   align-self: flex-start;
   margin-top: 1.25rem;
   color: var(--color-text);
@@ -541,8 +581,8 @@ a:focus-visible {
   transition: color 180ms ease;
 }
 
-.post-feature > a:hover,
-.post-feature > a:focus-visible,
+.post-feature > a:not(.post-feature__ribbon):hover,
+.post-feature > a:not(.post-feature__ribbon):focus-visible,
 .post-index__item:hover,
 .post-index__item:focus-visible {
   color: var(--color-focus);
@@ -1009,6 +1049,13 @@ a:focus-visible {
 
   .post-feature {
     min-height: 280px;
+    row-gap: 1.1rem;
+    padding-top: 3.6rem;
+  }
+
+  .post-feature__ribbon {
+    top: 1rem;
+    max-width: calc(100% - 1.2rem);
   }
 
   .post-index__item {
@@ -1023,5 +1070,17 @@ a:focus-visible {
 @media (max-width: 400px) {
   .contact-social {
     gap: clamp(0.22rem, 1.35vw, 0.35rem);
+  }
+
+  .post-feature__ribbon {
+    top: 0.9rem;
+    min-height: 1.5rem;
+    padding: 0.34rem 0.72rem 0.32rem 0.86rem;
+    font-size: 0.64rem;
+  }
+
+  .post-feature__ribbon::before {
+    width: 0.18rem;
+    margin: -0.34rem 0.52rem -0.32rem -0.86rem;
   }
 }
